@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Profile</title>
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+        <link rel="stylesheet" href="./src/css/style.css">
+    </head>
+    <body class="bodybg img-fluid object-fit">
+        <div class="container flex-column align-items-center">
+            <!-- row de bienvenida -->
+            <div class="row-py3 text-center">
+                <h1 class=" text-dark " id="bienvenida"> Bienvenido USERNAME </h1>
+            </div>
+            <!-- row de card de la información del usuario -->
+            <div class="row flex-column align-items-center">
+                <div class="col-12 col-lg-8 col-xl-6">
+                    <div class="card border-dark" id="cardSaldo">
+                        <!-- row de saldos -->
+                        <div class="row text-center">
+                            <p class="h5 text-muted " id="mensajeDia">Saldo al día DAY:</p>
+                            <p class="h3" id="saldoUsuario">$XXX MXN</p>
+                        </div>
+                        
+                        <div class="row flex-column align-items-center" id="rowAcciones">
+
+                            <!-- row de botones de acciones -->
+                            <div class="row text-start" >
+                                <p class="h5 text-muted mt-5">El día de hoy quiero: </p> 
+                            </div>
+
+                            <!-- boton verde -->
+                            <div class="row d-grid align-items-end w-75">
+                                <button type="button" class="btn btn-success my-1" id="btnDepositar">
+                                    Depositar
+                                </button>
+                            </div>
+
+                            <!-- boton rojo -->
+                            <div class="row d-grid align-items-end w-75">
+                                <button type="button" class="btn btn-danger my-1" id="btnRetirar">
+                                    Retirar
+                                </button>
+                            </div>
+                        </div>
+                        <!-- row que controla los movimientos -->
+                        <div class="row" id="rowMovimientos">
+                            <form>
+                                <div class="mb-3 mx-3">
+                                    <label for="inputCantidad" class="form-label">Cantidad:</label>
+                                    <input type="number" class="form-control" id="inputCantidad" min="0" max="990">
+                                    <div id="ayuda" class="form-text">Ingrese la cantidad a XXXXXX.</div>
+                                </div>
+                                <button type="submit" class="btn btn-primary mx-3" id="aceptarAccion">Aceptar</button>
+                                <button type="submit" class="btn btn-danger " id="cancelarAccion">Cancelar</button>
+                            </form>
+                        </div>
+                        <!-- row de cerrar sesión -->
+                        <div class="row mt-5 mb-2 mx-2">
+                            <div class="col-12 text-end">
+                                <a href="#" class="text-danger" onclick= "return btnCerrarSesion()"  >
+                                    Cerrar sesion
+                                </a> 
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Row para el mensaje de error -->
+            <div class="row py-5 flex-column align-items-center text-center">
+                <div class="col-12 col-lg-8 col-xl-6 text-center text-white" id="mensajes" >
+                    <p id="parrafoMensaje" class="pt-2">MENSAJE</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footers -->
+    </body>
+    <script src="./scripts/profileCode.js"></script>
+</html>
