@@ -30,7 +30,7 @@ let cuentas = [
   });   
   })
   
-  function guardarEnLocal(id, elemento){
+  const guardarEnLocal = (id, elemento)=>{
   if (! (localStorage.hasOwnProperty(id))){
     localStorage.setItem(id , JSON.stringify(elemento));
   }

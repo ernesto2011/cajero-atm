@@ -94,14 +94,14 @@ btnAccion.addEventListener('click', (e) =>{
     }
 })
 
-function btnCerrarSesion(){
+const btnCerrarSesion = () =>{
     localStorage.removeItem("user");
     banderaMovimiento = 0;
     window.location.href= "./index.html";
     return true;
 }
 
-function validarMovimiento(cantidad, saldo){
+const validarMovimiento =(cantidad, saldo) =>{
     switch(banderaMovimiento){
         case 1:
             if( saldo + cantidad > maxCant){
@@ -121,11 +121,11 @@ function validarMovimiento(cantidad, saldo){
     return true;
 }
 
-function mensaje(){
+const mensaje= ()=>{
     cuadroMensajes.style.visibility = "visible";
     let intervalo = setInterval(evento,5000);
   
-    function evento(){
+    const evento = ()=>{
         cuadroMensajes.style.visibility = "hidden";
           clearInterval(intervalo);
     }
