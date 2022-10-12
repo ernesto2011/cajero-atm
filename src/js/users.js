@@ -9,8 +9,8 @@ let cuentas = [
         contraseña: "pass01",
         saldo: 599.99 
   },
-    {   nombre: "Andres Sanchez", 
-        usuario: "serdna",
+    {   nombre: "Carla Nuñez", 
+        usuario: "car@1",
         contraseña: "123",
         saldo: 750.01 
   },
