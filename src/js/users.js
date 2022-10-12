@@ -1,19 +1,25 @@
 let cuentas = [
-    {   nombre: "Jared Mendoza", 
-        usuario: "jared123",
-        contraseña: "123",
+    {   nombre: "Mali rodriguez", 
+        usuario: "mali",
+        contraseña: "admin",
         saldo: 200
   },
-    {   nombre: "Krystel Baca", 
-        usuario: "kris321",
-        contraseña: "123",
+    {   nombre: "Daniela Salazar", 
+        usuario: "danny",
+        contraseña: "pass01",
         saldo: 599.99 
   },
     {   nombre: "Andres Sanchez", 
         usuario: "serdna",
         contraseña: "123",
         saldo: 750.01 
-  }
+  },
+    {
+        nombre: "Diana Segundo", 
+        usuario: "diana@admin",
+        contraseña: "1234",
+        saldo: 750.01  
+    }
   ];
   
   document.addEventListener("DOMContentLoaded",function(){

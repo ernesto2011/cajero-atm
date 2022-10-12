@@ -7,6 +7,7 @@ let btnIngreso = document.getElementById("inicio")
 
 
 
+
 btnIngreso.addEventListener('click', (e) =>{
     e.preventDefault();
     //Validar si usuario existe
@@ -32,3 +33,4 @@ btnIngreso.addEventListener('click', (e) =>{
     }
     
   })
+

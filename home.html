@@ -13,17 +13,18 @@
     <body class="bodybg img-fluid object-fit">
         <div class="container flex-column align-items-center">
             <!-- row de bienvenida -->
-            <div class="row-py3 text-center">
-                <h1 class=" text-dark " id="bienvenida"> Bienvenido USERNAME </h1>
-            </div>
+            
             <!-- row de card de la información del usuario -->
             <div class="row flex-column align-items-center">
                 <div class="col-12 col-lg-8 col-xl-6">
-                    <div class="card border-dark" id="cardSaldo">
+                    <div class="card border-dark" id="cardSaldo"><br>
                         <!-- row de saldos -->
+                        <div class="row-py3 text-center">
+                            <h1 class=" text-dark " id="bienvenida"> </h1>
+                        </div> <br>
                         <div class="row text-center">
-                            <p class="h5 text-muted " id="mensajeDia">Saldo al día DAY:</p>
-                            <p class="h3" id="saldoUsuario">$XXX MXN</p>
+                            <p class="h5 text-muted " id="mensajeDia"></p>
+                            <p class="h3" id="saldoUsuario"></p>
                         </div>
                         
                         <div class="row flex-column align-items-center" id="rowAcciones">
@@ -52,8 +53,8 @@
                             <form>
                                 <div class="mb-3 mx-3">
                                     <label for="inputCantidad" class="form-label">Cantidad:</label>
-                                    <input type="number" class="form-control" id="inputCantidad" min="0" max="990">
-                                    <div id="ayuda" class="form-text">Ingrese la cantidad a XXXXXX.</div>
+                                    <input type="text" class="form-control" id="inputCantidad" autocomplete="off">
+                                    <div id="ayuda" class="form-text"></div>
                                 </div>
                                 <button type="submit" class="btn btn-primary mx-3" id="aceptarAccion">Aceptar</button>
                                 <button type="submit" class="btn btn-danger " id="cancelarAccion">Cancelar</button>
@@ -81,5 +82,5 @@
 
         <!-- Footers -->
     </body>
-    <script src="./scripts/profileCode.js"></script>
+    <script src="./src/js/main.js"></script>
 </html>

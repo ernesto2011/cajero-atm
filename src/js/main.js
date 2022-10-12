@@ -1,3 +1,5 @@
+
+//variables del home.html
 let usuarioLogeado = JSON.parse(localStorage.getItem("user"));
 let acciones = document.getElementById("rowAcciones");
 let movimientos = document.getElementById("rowMovimientos");
@@ -15,7 +17,7 @@ const minCant = 10;
 const maxCant = 990;
 const cantidadDecimales = 2;
 
-document.addEventListener("DOMContentLoaded",function(){
+  document.addEventListener("DOMContentLoaded",function(){
     n =  new Date();
     y = n.getFullYear();
     m = n.getMonth() + 1;
@@ -26,7 +28,7 @@ document.addEventListener("DOMContentLoaded",function(){
     movimientos.style.visibility = "hidden";
     acciones.style.visibility ="visible";
     cuadroMensajes.style.visibility ="hidden";
-    document.getElementById("inputCantidad").value = 0;
+    document.getElementById("inputCantidad").value;
 })
 
 btnDepositar.addEventListener('click', (e) =>{
