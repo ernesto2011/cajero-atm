@@ -18,7 +18,7 @@ btnIngreso.addEventListener('click', (e) =>{
         objUsuario.saldo = JSON.parse(localStorage.getItem(usuarioIngresado.value));
         localStorage.setItem("user" , JSON.stringify(objUsuario));
         
-        setTimeout( function() { window.location.href = "./profile.html"; }, 1000 );
+        setTimeout( function() { window.location.href = "./home.html"; }, 1000 );
         Swal.fire(`Bienvenido: ${objUsuario.nombre}`)
       }
       
